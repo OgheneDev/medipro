@@ -67,7 +67,7 @@ const HeroSection = () => {
               />
             </div>
             
-            <div className="w-[45%] overflow-hidden rounded-tl-full rounded-tr-full rounded-bl-full rounded-br-full">
+            <div className="w-[45%] overflow-hidden relative top-[-60px] rounded-tl-full rounded-tr-full rounded-bl-full rounded-br-full">
               <Image
                 src={walking}
                 alt="Doctors Walking"
