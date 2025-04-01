@@ -37,14 +37,14 @@ const HeroSection = () => {
           <div className="flex gap-2 mb-16 lg:mb-0">
             <Link 
               href="/learn-more" 
-              className="flex items-center justify-center text-sm gap-2 bg-transparent border-2 border-[#F2AA8A] text-[#F2AA8A] rounded-full px-8 py-3 font-medium transition-colors hover:bg-[#F2AA8A] hover:text-[#0A3635]"
+              className="flex items-center justify-center text-[12px] gap-2 bg-transparent border-2 border-[#F2AA8A] text-[#F2AA8A] rounded-full px-8 py-3 font-medium transition-colors hover:bg-[#F2AA8A] hover:text-[#0A3635]"
             >
               Read More <ArrowRight size={20} />
             </Link>
             
             <Link 
               href="/watch-video" 
-              className="flex items-center justify-center text-sm gap-2 text-white py-3 font-medium"
+              className="flex items-center justify-center text-[12px] gap-2 text-white py-3 font-medium"
             >
               <div className="bg-white rounded-full p-1 mr-2">
                 <Play size={18} className="text-[#0A3635] ml-0.5" />
@@ -110,7 +110,7 @@ const HeroSection = () => {
           </div>
         </div>
         {/* Mobile dotted pattern */}
-        <div className="absolute inset-0 grid grid-cols-12 grid-rows-12 gap-2 z-0">
+        <div className="absolute inset-0 grid grid-cols-12 grid-rows-12 px-16 gap-2 z-0">
         {Array(144).fill(null).map((_, i) => (
   <div key={i} className="w-1 h-1 bg-white opacity-30 rounded-full"></div>
 ))}
