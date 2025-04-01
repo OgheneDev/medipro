@@ -12,11 +12,11 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description, lin
   return (
     <div className="flex flex-col h-full border border-black transition-colors duration-300 cursor-pointer hover:bg-[#F2AA8A] group">
       <div className="p-6 md:px-8 md:py-10 flex-grow">
-        <div className="text-teal-800 w-10 h-10 mb-8 group-hover:text-white transition-colors duration-300">
+        <div className="text-teal-800 w-10 h-10 mb-8  transition-colors duration-300">
           {icon}
         </div>
-        <h3 className="text-teal-900 text-xl font-bold mb-2 group-hover:text-white transition-colors duration-300">{title}</h3>
-        <p className="text-gray-600 text-[18px] group-hover:text-white transition-colors duration-300">{description}</p>
+        <h3 className="text-teal-900 text-xl font-bold mb-2  transition-colors duration-300">{title}</h3>
+        <p className="text-gray-600 text-[18px]  transition-colors duration-300">{description}</p>
       </div>
       <div className="bg-[#F2AA8A] p-4 text-center transition-colors duration-300">
         <Link href={link} className="text-white font-medium flex items-center justify-center group-hover:text-teal-900 transition-colors duration-300">
