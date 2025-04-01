@@ -20,7 +20,7 @@ const HeroSection = () => {
           </h2>
 
           {/* Main heading */}
-          <h1 className="md:text-5xl text-2xl font-bold text-[#F2AA8A] mb-6 leading-tight">
+          <h1 className="md:text-5xl text-xl font-bold text-[#F2AA8A] mb-6 leading-tight">
             We Are Providing <br className="hidden lg:block" />
             Best & Affordable <br className="hidden lg:block" />
             Health Care.
