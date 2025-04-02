@@ -110,11 +110,11 @@ const Testimonials = () => {
         style={{
           background: "linear-gradient(to bottom, #0A3635 50%,  #FDF5F2 50%)",
         }}
-        className="flex-1 h-[300px] px-5 py-12 pb-10"
+        className="flex-1 h-[300px] px-5 md:px-10 py-12 pb-10"
       >
-        <div className="max-w-6xl mx-auto">
+        <div className="w-full">
           {/* Testimonial Header */}
-          <div className="mb-8">
+          <div className="mb-8 md:mb-10">
             <p className="text-[#F2AA8A] md:text-xl mb-4 font-medium uppercase tracking-wider">
               TESTIMONIAL
             </p>
@@ -127,7 +127,7 @@ const Testimonials = () => {
           <div className="relative">
             <div className="overflow-hidden">
               <div
-                className="flex transition-transform duration-500 ease-in-out"
+                className="flex gap-10 transition-transform duration-500 ease-in-out"
                 style={{
                   transform: screenSize,
                 }}
@@ -135,9 +135,9 @@ const Testimonials = () => {
                 {testimonials.map((testimonial) => (
                   <div
                     key={testimonial.id}
-                    className="w-full md:w-1/2 lg:w-1/3  flex-shrink-0"
+                    className="w-full md:w-[390px]  flex-shrink-0"
                   >
-                    <div className="bg-white border border-[#F2AA8A] p-5 rounded h-full">
+                    <div className="bg-white border border-[#F2AA8A] p-5 md:p-8 rounded h-full">
                       <div className="flex items-center mb-4">
                         <Image
                           src={testimonial.image}
@@ -153,7 +153,7 @@ const Testimonials = () => {
                           </p>
                         </div>
                       </div>
-                      <p className="text-gray-600 mt-10 text-sm">{testimonial.text}</p>
+                      <p className="text-gray-500 mt-10 text-sm md:text-[16px] leading-8">{testimonial.text}</p>
                     </div>
                   </div>
                 ))}
