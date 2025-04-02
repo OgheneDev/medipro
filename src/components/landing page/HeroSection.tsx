@@ -11,16 +11,16 @@ const HeroSection = () => {
   return (
     <section className="relative bg-[#0A3635] text-white pb-16">
       {/* Main content - desktop layout */}
-      <div className="container mx-auto px-6 lg:flex lg:items-center lg:gap-8 lg:min-h-[600px] lg:py-16">
+      <div className="container mx-auto px-5 lg:flex lg:items-center lg:gap-8 lg:min-h-[600px] lg:py-16">
         {/* Left column */}
         <div className="lg:w-1/2 pt-16 lg:pt-26">
           {/* Subtitle */}
           <h2 className="md:text-[18px] text-[16px] tracking-wider uppercase mb-4">
-            WE TACK CARE OF YOUR HEALTH
+            WE TAKE CARE OF YOUR HEALTH
           </h2>
 
           {/* Main heading */}
-          <h1 className="md:text-5xl text-xl font-bold text-[#F2AA8A] mb-6 leading-tight">
+          <h1 className="md:text-5xl text-2xl font-bold text-[#F2AA8A] mb-6 leading-tight">
             We Are Providing <br className="hidden lg:block" />
             Best & Affordable <br className="hidden lg:block" />
             Health Care.

@@ -69,32 +69,32 @@ const MedicalServices = () => {
         
         {/* Right side content */}
         <div className="w-full lg:w-1/2 lg:pl-8 mt-8 md:mt-0 bg-[#FDF5F2]">
-          <div className="text-[#F2AA8A] uppercase tracking-wide text-xl mb-2">
+          <div className="text-[#F2AA8A] uppercase tracking-wide md:text-xl mb-2">
             About Medicalife
           </div>
           
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0A3635] mb-6">
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#0A3635] mb-6">
             Our Best Services &<br />
             Popular Treatment<br />
             Here.
           </h1>
           
           <p className="text-gray-600 mb-10">
-            We take pride in offering a wide range of best-in-<br />class medical services and popular treatments to cater to<br /> your diverse healthcare needs.
+            We take pride in offering a wide range of best-in-<br className='hidden md:block' />class medical services and popular treatments to cater to<br className='hidden md:block' /> your diverse healthcare needs.
           </p>
           
           <div className="space-y-4 mb-8">
             <div className="flex items-center space-x-3">
               <CheckCircle size={20} className="text-[#F2AA8A]" />
-              <span className="text-gray-800 font-medium">Mental health Solutions</span>
+              <span className="font-semibold text-[#0A3635]">Mental health Solutions</span>
             </div>
             <div className="flex items-center space-x-3">
               <CheckCircle size={20} className="text-[#F2AA8A]" />
-              <span className="text-gray-800 font-medium">Rapid Patient Improvement</span>
+              <span className="font-semibold text-[#0A3635]">Rapid Patient Improvement</span>
             </div>
             <div className="flex items-center space-x-3">
               <CheckCircle size={20} className="text-[#F2AA8A]" />
-              <span className="text-gray-800 font-medium">World Class Treatment</span>
+              <span className="font-semibold text-[#0A3635]">World Class Treatment</span>
             </div>
           </div>
           

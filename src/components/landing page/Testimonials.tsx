@@ -110,7 +110,7 @@ const Testimonials = () => {
         style={{
           background: "linear-gradient(to bottom, #0A3635 50%,  #FDF5F2 50%)",
         }}
-        className="flex-1 h-[300px] px-3 py-12"
+        className="flex-1 h-[300px] px-5 py-12"
       >
         <div className="max-w-6xl mx-auto">
           {/* Testimonial Header */}
@@ -118,7 +118,7 @@ const Testimonials = () => {
             <p className="text-[#F2AA8A] text-xl mb-4 font-medium uppercase tracking-wider">
               TESTIMONIAL
             </p>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mt-2">
+            <h2 className="text-4xl md:text-4xl font-bold text-white mt-2">
               What Patients Say About Us.
             </h2>
           </div>

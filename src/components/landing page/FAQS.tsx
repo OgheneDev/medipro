@@ -31,7 +31,7 @@ const FAQS = () => {
   return (
     <div className="bg-[#f8f6f5] py-12 md:py-20 md:pb-35">
       {/* Main Content */}
-      <div className="container mx-auto px-4 md:px-10">
+      <div className="container mx-auto px-5 md:px-10">
         <div className="flex flex-col md:flex-row md:justify-between md:gap-20">
           {/* Left side - Doctor Image */}
           <div className="w-full md:w-1/2">
@@ -42,12 +42,12 @@ const FAQS = () => {
                 className="object-cover w-full"
               />
               <div className="flex justify-end absolute right-0 -bottom-15">
-                <div className="md:w-[180px] text-center  md:h-auto bg-[#0A3635] p-8 text-white flex flex-col justify-center">
-                  <span className="text-4xl font-bold">100+</span>
+                <div className="md:w-[180px] text-center md:h-auto bg-[#0A3635] p-6 text-white flex flex-col justify-center">
+                  <span className="text-2xl font-bold">100+</span>
                   <span className="text-[18px]">Doctors</span>
                 </div>
-                <div className="md:w-[180px] text-center md:h-auto bg-[#F2AA8A] p-8 text-white flex flex-col justify-center">
-                  <span className="text-4xl font-bold">16+</span>
+                <div className="md:w-[180px] w-[130px]  md:h-auto bg-[#F2AA8A] p-6 text-white flex flex-col justify-center">
+                  <span className="text-2xl font-bold text-center">16+</span>
                   <span className="text-[18px]">World Office</span>
                 </div>
               </div>

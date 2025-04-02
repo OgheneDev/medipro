@@ -32,7 +32,7 @@ const ContactForm = () => {
         {/* Two column layout */}
         <div className="flex flex-col md:flex-row">
           {/* Left column - Coral section */}
-          <div className="bg-[#F2AA8A] p-8 md:p-6 md:w-1/3 flex flex-col items-center justify-center text-center">
+          <div className="bg-[#F2AA8A] p-5 md:p-6 md:w-1/3 flex flex-col items-center justify-center text-center">
             <div className="max-w-md">
               <Image
                 src={contactIllustration}
@@ -40,14 +40,7 @@ const ContactForm = () => {
                 className="h-48 mx-auto mb-8"
               />
 
-              <h3 className="text-white text-3xl font-bold ">
-                Make <br /> Appointment <br /> &
-              </h3>
-              <p className="text-white text-3xl font-bold">
-                Take Care Of Your
-                <br />
-                Healthy Life
-              </p>
+              <h3 className="text-2xl md:text-3xl text-white">Make <span className="font-bold">Appointment</span> & Take Care Of Your Healthy Life</h3>
             </div>
           </div>
 
@@ -100,7 +93,7 @@ const ContactForm = () => {
               <div className="flex justify-start">
                 <button
                   type="submit"
-                  className="px-8 py-3 rounded-full border border-[#F2AA8A] text-[#F2AA8A] hover:bg-[#F2AA8A] hover:text-white transition-colors"
+                  className="px-8 py-3 rounded-full border-2 font-medium border-[#F2AA8A] text-[#F2AA8A] hover:bg-[#F2AA8A] hover:text-white transition-colors"
                 >
                   Send
                 </button>

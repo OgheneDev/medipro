@@ -30,15 +30,15 @@ const BlogSection = () => {
   ];
 
   return (
-    <div className="max-w-full bg-[#FDF5F2] mx-auto px-3 md:px-12 py-12">
+    <div className="max-w-full bg-[#FDF5F2] mx-auto px-3 md:px-12 md:pb-25 py-12">
       {/* Header */}
       <div className="flex justify-between items-center mb-8">
         <div>
-          <p className="text-[#F2AA8A] text-xl uppercase tracking-wide font-medium">
+          <p className="text-[#F2AA8A] md:text-xl uppercase tracking-wide">
             OUR BLOG
           </p>
-          <h2 className="text-4xl md:text-5xl font-bold text-[#0A3635] mt-2">
-            Lates News & Articles.
+          <h2 className="text-2xl md:text-4xl font-bold text-[#0A3635] mt-2">
+            Latest News & Articles.
           </h2>
         </div>
         <div className="hidden md:block">
@@ -51,17 +51,17 @@ const BlogSection = () => {
         {blogPosts.map((post) => (
           <div
             key={post.id}
-            className="bg-white rounded-lg overflow-hidden shadow-sm"
+            className="overflow-hidden"
           >
             <div className="relative">
               <Image
                 src={post.image}
                 alt={post.title}
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-cover rounded-lg"
               />
             </div>
-            <div className="p-5">
-              <h3 className="text-xl font-bold text-[#0A3635] mb-3">
+            <div className="mt-5">
+              <h3 className="text-xl font-bold text-[#0A3635] mb-5">
                 {post.title}
               </h3>
               <p className="text-gray-600 mb-1">{post.topic}</p>

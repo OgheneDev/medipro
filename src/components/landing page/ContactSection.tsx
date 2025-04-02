@@ -2,10 +2,10 @@ import { FaCalendarAlt } from "react-icons/fa";
 
 const ContactSection = () => {
   return (
-    <div className="bg-[#FDF5F2] py-16 px-4 md:px-10 md:py-[100px] flex flex-col md:flex-row justify-center">
+    <div className="bg-[#FDF5F2] py-16 px-5 md:px-10 md:py-[100px] flex flex-col md:flex-row justify-center">
       {/* Contact Box */}
       <div className="bg-[#E9967A] text-white flex flex-col justify-between md:w-1/3 w-full">
-        <div className="px-7 py-10">
+        <div className="px-7 py-8">
         <h2 className="text-xl md:text-3xl font-semibold">
           Don't <span className="font-bold">Hesitate</span> To Contact us
         </h2>
