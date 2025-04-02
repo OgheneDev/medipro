@@ -103,7 +103,7 @@ const Footer: React.FC<FooterProps> = ({ logoUrl }) => {
               <h4 className="text-white text-base font-medium mb-4">Subscribe To Our Newsletter</h4>
               <p className="text-sm mb-6">Stay informed and never miss out on the latest news, health tips.</p>
               <form onSubmit={handleSubmit}>
-                <div className="flex flex-col md:flex-row gap-2 border p-1 border-gray-600 rounded">
+                <div className="flex flex-col md:flex-row gap-2 md:gap-1 border-2 p-1 px-2 border-gray-400 rounded-lg">
                   <input
                     type="email"
                     placeholder="Enter Your Email"

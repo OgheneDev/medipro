@@ -18,7 +18,7 @@ const ContactForm = () => {
       </div>
 
       {/* Content container */}
-      <div className="relative z-10 max-w-full mx-3 md:mx-8 px-4 py-12">
+      <div className="relative z-10 max-w-full px-4 py-12">
         {/* Header section */}
         <div className="text-center mb-8">
           <p className="text-white uppercase tracking-wide font-medium">
