@@ -58,12 +58,12 @@ const Navbar = () => {
                 ))}
             </div>
             
-            {/* Book Appointment Button */}
+            {/* View Patient Records Button */}
             <Link 
                 href="/book" 
                 className="hidden md:flex items-center text-[18px] border-2 border-[#F2AA8A] text-[#F2AA8A] px-7 py-2 rounded-full hover:bg-[#F2AA8A] hover:text-[#0A3635] transition-colors"
             >
-                <span>Book Appointment</span>
+                <span>View Patient Records</span>
                 <Calendar className="ml-2 w-5 h-5" />
             </Link>
             </div>
@@ -107,7 +107,7 @@ const Navbar = () => {
                             href="/book" 
                             className="text-[#F2AA8A] text-lg block flex items-center"
                         >
-                            <span>Book Appointment</span>
+                            <span>View Patient Records</span>
                             <Calendar className="ml-2 w-5 h-5" />
                         </Link>
                     </li>
