@@ -95,10 +95,13 @@ const Testimonials = () => {
   }
 
   // Detect screen size on initial load
-  getScreenSize();
+  if (typeof window !== "undefined") {
+    getScreenSize();
+
+    window.addEventListener("resize", getScreenSize);
+  }
 
   // Detect screen size on window resize
-  window.addEventListener("resize", getScreenSize);
 
   return (
     <div className="flex flex-col min-h-screen">
