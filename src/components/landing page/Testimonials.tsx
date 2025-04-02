@@ -104,21 +104,21 @@ const Testimonials = () => {
   // Detect screen size on window resize
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col">
       {/* Main Content */}
       <main
         style={{
           background: "linear-gradient(to bottom, #0A3635 50%,  #FDF5F2 50%)",
         }}
-        className="flex-1 h-[300px] px-5 py-12"
+        className="flex-1 h-[300px] px-5 py-12 pb-10"
       >
         <div className="max-w-6xl mx-auto">
           {/* Testimonial Header */}
           <div className="mb-8">
-            <p className="text-[#F2AA8A] text-xl mb-4 font-medium uppercase tracking-wider">
+            <p className="text-[#F2AA8A] md:text-xl mb-4 font-medium uppercase tracking-wider">
               TESTIMONIAL
             </p>
-            <h2 className="text-4xl md:text-4xl font-bold text-white mt-2">
+            <h2 className="text-2xl md:text-4xl font-bold text-white mt-2">
               What Patients Say About Us.
             </h2>
           </div>
@@ -135,9 +135,9 @@ const Testimonials = () => {
                 {testimonials.map((testimonial) => (
                   <div
                     key={testimonial.id}
-                    className="w-full md:w-1/2 lg:w-1/3 px-3  flex-shrink-0"
+                    className="w-full md:w-1/2 lg:w-1/3  flex-shrink-0"
                   >
-                    <div className="bg-white border border-[#F2AA8A] p-12 rounded h-full">
+                    <div className="bg-white border border-[#F2AA8A] p-5 rounded h-full">
                       <div className="flex items-center mb-4">
                         <Image
                           src={testimonial.image}
@@ -153,7 +153,7 @@ const Testimonials = () => {
                           </p>
                         </div>
                       </div>
-                      <p className="text-gray-600">{testimonial.text}</p>
+                      <p className="text-gray-600 mt-10 text-sm">{testimonial.text}</p>
                     </div>
                   </div>
                 ))}
@@ -168,7 +168,7 @@ const Testimonials = () => {
                   <button
                     key={index}
                     onClick={() => goToSlide(index)}
-                    className={`w-2 h-2 rounded-full ${
+                    className={`w-4 h-4 rounded-full ${
                       index === activeSlide ? "bg-orange-300" : "bg-teal-800"
                     }`}
                     aria-label={`Go to slide ${index + 1}`}
