@@ -12,14 +12,14 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description, lin
   return (
     <div className="flex flex-col h-full border border-black transition-colors duration-300 cursor-pointer hover:bg-[#F2AA8A] group">
       <div className="p-6 md:px-8 md:py-10 flex-grow">
-        <div className="text-teal-800 w-10 h-10 mb-8  transition-colors duration-300">
+        <div className="text-[#0A3635] w-10 h-10 mb-8  transition-colors duration-300">
           {icon}
         </div>
-        <h3 className="text-teal-900 text-xl font-bold mb-2  transition-colors duration-300">{title}</h3>
+        <h3 className="text-[#0A3635] text-xl font-bold mb-2  transition-colors duration-300">{title}</h3>
         <p className="text-gray-600 text-[18px]  transition-colors duration-300">{description}</p>
       </div>
       <div className="bg-[#F2AA8A] p-4 text-center transition-colors duration-300">
-        <Link href={link} className="text-white font-medium flex items-center justify-center group-hover:text-teal-900 transition-colors duration-300">
+        <Link href={link} className="text-white font-medium flex items-center justify-center group-hover:text-[#0A3635] transition-colors duration-300">
           Read More 
           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clipRule="evenodd" />
@@ -70,7 +70,7 @@ const MedicalServicesList: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div className="mb-12 max-w-md pl-5 pt-10 bg-[#ffebe7] rounded-tr-full rounded-br-full">
           <h4 className="text-[#F2AA8A] text-xl  uppercase tracking-wider mb-2">MEDICAL SERVICES</h4>
-          <h2 className="text-teal-900 text-4xl md:text-5xl font-bold leading-tight">We're Providing Best Services.</h2>
+          <h2 className="text-[#0A3635] text-4xl md:text-5xl font-bold leading-tight">We're Providing Best Services.</h2>
         </div>
           {services.map((service, index) => (
             <ServiceCard

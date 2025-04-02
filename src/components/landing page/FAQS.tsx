@@ -29,42 +29,52 @@ const FAQS = () => {
   ];
 
   return (
-    <div className="flex flex-col min-h-screen bg-white">
+    <div className="bg-[#f8f6f5] py-12 md:py-20 md:pb-35">
       {/* Main Content */}
-      <main className="flex-1 flex">
-        {/* Left side - Doctor Image */}
-        <div className="w-1/2 bg-stone-100">
-          <div className="h-full flex items-center justify-center p-4">
-            <Image
-              src={doctorsImg}
-              alt="Medical team of doctors"
-              className="object-cover max-h-full"
-            />
+      <div className="container mx-auto px-4 md:px-10">
+        <div className="flex flex-col md:flex-row md:justify-between md:gap-20">
+          {/* Left side - Doctor Image */}
+          <div className="w-full md:w-1/2">
+            <div className="relative">
+              <Image
+                src={doctorsImg}
+                alt="Medical team of doctors"
+                className="object-cover w-full"
+              />
+              <div className="flex justify-end absolute right-0 -bottom-15">
+                <div className="md:w-[180px] text-center  md:h-auto bg-[#0A3635] p-8 text-white flex flex-col justify-center">
+                  <span className="text-4xl font-bold">100+</span>
+                  <span className="text-[18px]">Doctors</span>
+                </div>
+                <div className="md:w-[180px] text-center md:h-auto bg-[#F2AA8A] p-8 text-white flex flex-col justify-center">
+                  <span className="text-4xl font-bold">16+</span>
+                  <span className="text-[18px]">World Office</span>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
 
-        {/* Right side - Content */}
-        <div className="w-1/2 p-8 flex flex-col">
-          <div className="mt-8">
-            <p className="text-orange-400 font-medium mb-4">FAQS</p>
-            <h1 className="text-4xl font-bold text-teal-900 mb-6">
+          {/* Right side - Content */}
+          <div className="w-full md:w-1/2 mt-24 md:mt-0">
+            <p className="text-[#F2AA8A] uppercase text-xl mb-4">FAQS</p>
+            <h1 className="text-4xl md:text-5xl font-bold text-[#0A3635] mb-6">
               Consultations with Qualified doctors.
             </h1>
 
             {/* FAQ Accordion */}
             <div className="mt-8 space-y-4">
               {faqs.map((faq, index) => (
-                <div key={index} className="border-b border-gray-200 pb-2">
+                <div key={index} className=" pb-2">
                   <button
-                    className="flex justify-between items-center w-full text-left py-2 text-teal-800 font-medium"
+                    className="flex gap-6 items-center w-full text-left py-2 text-[#0A3635] font-medium"
                     onClick={() => toggleFaq(index)}
                   >
-                    <span>{faq.question}</span>
                     {expandedFaq === index ? (
-                      <span className="text-2xl text-teal-700">-</span>
+                      <span className="text-2xl text-[#0A3635]">-</span>
                     ) : (
-                      <span className="text-2xl text-teal-700">+</span>
+                      <span className="text-2xl text-[#0A3635]">+</span>
                     )}
+                    <span className="font-bold md:text-[18px]">{faq.question}</span>
                   </button>
                   {expandedFaq === index && (
                     <div className="py-2 text-gray-600">{faq.answer}</div>
@@ -73,17 +83,8 @@ const FAQS = () => {
               ))}
             </div>
           </div>
-
-          <div className="mt-auto flex">
-            <div className="w-1/2 bg-teal-900 p-8 text-white flex flex-col justify-center">
-              <span className="text-5xl font-bold">100+</span>
-            </div>
-            <div className="w-1/2 bg-orange-300 p-8 text-white flex flex-col justify-center">
-              <span className="text-5xl font-bold">16+</span>
-            </div>
-          </div>
         </div>
-      </main>
+      </div>
     </div>
   );
 };

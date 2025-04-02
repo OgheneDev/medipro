@@ -73,7 +73,7 @@ const MedicalServices = () => {
             About Medicalife
           </div>
           
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-green-900 mb-6">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0A3635] mb-6">
             Our Best Services &<br />
             Popular Treatment<br />
             Here.
