@@ -127,7 +127,7 @@ const Testimonials = () => {
           <div className="relative">
             <div className="overflow-hidden">
               <div
-                className="flex gap-10 transition-transform duration-500 ease-in-out"
+                className="flex md:gap-10 transition-transform duration-500 ease-in-out"
                 style={{
                   transform: screenSize,
                 }}
