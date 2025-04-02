@@ -7,6 +7,7 @@ import HowWeWork from "@/components/landing page/HowWeWork";
 import FAQS from "@/components/landing page/FAQS";
 import Testimonials from "@/components/landing page/Testimonials";
 import BlogSection from "@/components/landing page/Blog";
+import ContactForm from "@/components/landing page/ContactForm";
 
 export default function Home() {
   return (
@@ -18,8 +19,9 @@ export default function Home() {
       <Appointments />
       <HowWeWork />
       <FAQS />
-      {/*<Testimonials /> */}
-      {/* <BlogSection /> */}
+      <Testimonials />
+      <BlogSection />
+      <ContactForm />
     </div>
   );
 }
