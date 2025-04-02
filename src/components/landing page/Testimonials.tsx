@@ -5,6 +5,8 @@ import Image from "next/image";
 
 const Testimonials = () => {
   const [activeSlide, setActiveSlide] = useState(0);
+  const [touchStart, setTouchStart] = useState(0);
+  const [touchEnd, setTouchEnd] = useState(0);
 
   const testimonials = [
     {
@@ -101,7 +103,25 @@ const Testimonials = () => {
     window.addEventListener("resize", getScreenSize);
   }
 
-  // Detect screen size on window resize
+  // Touch handlers for swipe
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStart - touchEnd > 50) {
+      // Swipe left
+      nextSlide();
+    }
+    if (touchStart - touchEnd < -50) {
+      // Swipe right
+      prevSlide();
+    }
+  };
 
   return (
     <div className="flex flex-col">
@@ -131,6 +151,9 @@ const Testimonials = () => {
                 style={{
                   transform: screenSize,
                 }}
+                onTouchStart={handleTouchStart}
+                onTouchMove={handleTouchMove}
+                onTouchEnd={handleTouchEnd}
               >
                 {testimonials.map((testimonial) => (
                   <div

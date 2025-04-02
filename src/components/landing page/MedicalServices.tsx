@@ -15,9 +15,9 @@ const MedicalServices = () => {
       <div className="container mx-auto px-4 py-12 flex flex-col lg:flex-row items-center lg:gap-16">
         
        {/* Images section */}
-       <div className="relative w-full lg:w-1/2 pt-16">
-          <div className="relative z-10 flex justify-between gap-4 px-8">
-            <div className="w-[45%] md:w-[42%] h-[360px] overflow-hidden rounded-tl-full rounded-tr-full rounded-bl-full rounded-br-full">
+       <div className="relative w-full lg:w-1/2 pt-8 lg:pt-16">
+          <div className="relative z-10 flex justify-between gap-4 px-4 lg:px-8">
+            <div className="w-[45%] md:w-[42%] h-[280px] lg:h-[360px] overflow-hidden rounded-tl-full rounded-tr-full rounded-bl-full rounded-br-full">
               <Image
                 src={hallway}
                 alt="Doctors in hallway"
@@ -28,7 +28,7 @@ const MedicalServices = () => {
             </div>
             
             <div className="flex flex-col gap-4 w-[42%]">
-              <div className="h-[360px] overflow-hidden relative top-[-60px] rounded-tl-full rounded-tr-full rounded-bl-full rounded-br-full">
+              <div className="h-[280px] lg:h-[360px] overflow-hidden relative lg:top-[-60px] rounded-tl-full rounded-tr-full rounded-bl-full rounded-br-full">
                 <Image
                   src={mask}
                   alt="Doctor with mask"
@@ -39,7 +39,7 @@ const MedicalServices = () => {
               </div>
               
               {/* Video thumbnail */}
-              <div className="md:w-[130%] w-[150%] md:h-[180px] h-[120px] rounded-full overflow-hidden relative -mt-8 -ml-4">
+              <div className="w-full md:w-[130%] h-[100px] md:h-[180px] rounded-full overflow-hidden relative -mt-4 lg:-mt-8 -ml-2 lg:-ml-4">
                 <Image
                   src={video}
                   alt="Doctor patient conversation"

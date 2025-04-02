@@ -89,7 +89,7 @@ const HeroSection = () => {
       {/* Mobile images - only visible on mobile */}
       <div className="relative mt-4 mb-12 lg:hidden">
         <div className="relative z-10 flex justify-between px-4 gap-4">
-          <div className="w-[45%] overflow-hidden rounded-tl-full rounded-tr-full rounded-bl-full rounded-br-full">
+          <div className="w-[45%] relative bottom-[-30px] overflow-hidden rounded-tl-full rounded-tr-full rounded-bl-full rounded-br-full">
             <Image
               src={female}
               alt="Female Doctor"
